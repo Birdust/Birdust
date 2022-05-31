@@ -3,7 +3,7 @@
 - 🌱 I’m currently learning Java,C++
 - 📫 How to reach me djswl0922@gmail.com
 - I'm a college Student.
-- I'm interested in back-end developer...
+- I'm interested in back-end developer...data base...Java?
 
 <!---
 Birdust/Birdust is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
