@@ -1,8 +1,5 @@
-- 👋 Hi, I’m @Birdust
-- 👀 I’m interested in C++,C, Java
-- 🌱 I’m currently learning Java,C++
 - 📫 How to reach me djswl0922@gmail.com
-- I'm a college Student.
+
 - I'm interested in back-end developer...data base...Java?
 
 <!---
