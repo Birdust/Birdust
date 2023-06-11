@@ -15,6 +15,7 @@
 ## Tools
 ![Git](https://img.shields.io/badge/Git-F05032.svg?&style=for-the-badge&logo=Git&logoColor=white) ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-007ACC.svg?&style=for-the-badge&logo=Visual%20Studio%20Code&logoColor=white) ![Android Studio](https://img.shields.io/badge/Android%20Studio-3DDC84.svg?&style=for-the-badge&logo=Android%20Studio&logoColor=white)
 
+ ### 🏆 Github Status
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Birdust&layout=compact)
 
 
@@ -23,11 +24,7 @@
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Birdust&repo=BookProject&theme=radical "BookProject")](https://github.com/Birdust/BookProject)
 [![ReadMe Card](https://github-readme-stats.vercel.app/api/pin/?username=Birdust&repo=WritingChallenge&theme=highcontrast "WritingChallenge")](https://github.com/Birdust/WritingChallenge)
 
- ### 🏆 Github Status
-![Top Used Language](https://github-readme-stats.vercel.app/api/top-langs/?username=Birdust&show_icons=true&theme=tokyonight&hide_border=true)
 
  ---
 
-<a href="djswl0922@gmail.com"><img src="https://www.vectorlogo.zone/logos/gmail/gmail-icon.svg" width="30px" alt="mail"></a> 
-&nbsp; &nbsp;
  
