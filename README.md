@@ -1,5 +1,5 @@
 
-#<div align="center">🚀 2021219008 김언지의 resume</div>
+# <div align="center">🚀 2021219008 김언지의 resume</div>
 ---
 
 # 💻:keyboard: Languages and Tools 
