@@ -1,9 +1,11 @@
 <!--
 ![header](https://capsule-render.vercel.app/api?type=cylinder&color=000000&height=150&section=header&text=Birdust&fontColor=ffffff&fontSize=70&animation=fadeIn&fontAlignY=55)
  -->
-
+<!--
 ![soft](https://capsule-render.vercel.app/api?type=soft&color=auto&text=🚀%202021219008%20김언지의%20README&fontSize=40&animation=twinkling)
+-->
 
+![soft](https://capsule-render.vercel.app/api?type=soft&color=000000&height=150&section=header&text=🚀%202021219008%20김언지의%20README&fontColor=ffffff&fontSize=40&animation=twinkling)
 <!--
 # <div align="center">🚀 2021219008 김언지의 resume</div>
 ---
