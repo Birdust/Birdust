@@ -8,6 +8,9 @@
 # <div align="center">🚀 2021219008 김언지의 resume</div>
 ---
 -->
+## Rect <a id="rect">
+![rect](https://capsule-render.vercel.app/api?type=rect&color=gradient&text=%20%20Birdust%20%20&fontAlign=30&fontSize=30&textBg=true&desc=2021219008%20김언지의%20%27README%27&descAlign=60&descAlignY=50)
+
 
 ## About me :eyes:
 - Semyung University 
