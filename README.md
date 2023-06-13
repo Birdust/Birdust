@@ -1,6 +1,7 @@
 
+![header](https://capsule-render.vercel.app/api?type=cylinder&color=000000&height=150&section=header&text=Birdust&fontColor=ffffff&fontSize=70&animation=fadeIn&fontAlignY=55)
 # <div align="center">🚀 2021219008 김언지의 resume</div>
----
+
 ## About me :eyes:
 - :dart: Full stack development | Machine learning | Deep learning | Computer vision | Drone
 - 현재 가장 관심있는 언어는 Java입니다.
@@ -17,6 +18,9 @@
 
  ### 🏆 Github Status
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Birdust&layout=compact)
+
+
+
 
 
 ---
