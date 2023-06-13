@@ -1,11 +1,11 @@
 
 ![header](https://capsule-render.vercel.app/api?type=cylinder&color=000000&height=150&section=header&text=Birdust&fontColor=ffffff&fontSize=70&animation=fadeIn&fontAlignY=55)
 # <div align="center">🚀 2021219008 김언지의 resume</div>
-
+---
 ## About me :eyes:
+- Semyung University 
 - :dart: Full stack development | Machine learning | Deep learning | Computer vision | Drone
 - 현재 가장 관심있는 언어는 Java입니다.
-- Semyung University 
 - 이력서 페이지 : **[https://birdust.github.io/resume/](https://birdust.github.io/resume/)**
 - :e-mail: 궁금한 것이 있다면 : **[djswl0922@gmail.com](djswl0922@gmail.com)**
 # 💻:keyboard: Languages and Tools 
