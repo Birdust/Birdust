@@ -5,18 +5,16 @@
 ![soft](https://capsule-render.vercel.app/api?type=soft&color=auto&text=🚀%202021219008%20김언지의%20README&fontSize=40&animation=twinkling)
 -->
 
-![soft](https://capsule-render.vercel.app/api?type=soft&color=000000&height=150&section=header&text=🚀%202021219008%20김언지의%20README&fontColor=ffffff&fontSize=40&animation=twinkling)
+![soft](https://capsule-render.vercel.app/api?type=soft&color=000000&height=150&section=header&text=Birdust%20README&fontColor=ffffff&fontSize=40&animation=twinkling)
 <!--
-# <div align="center">🚀 2021219008 김언지의 resume</div>
+# <div align="center">Birdust</div>
 ---
 -->
 
 ## About me :eyes:
-- Semyung University 
 - :dart: Full stack development | Machine learning | Deep learning | Computer vision | Drone
-- 현재 가장 관심있는 언어는 Java입니다.
 - 이력서 페이지 : **[https://birdust.github.io/resume/](https://birdust.github.io/resume/)**
-- :e-mail: 궁금한 것이 있다면 : **[djswl0922@gmail.com](djswl0922@gmail.com)**
+- :e-mail: e-mail : **[djswl0922@gmail.com](djswl0922@gmail.com)**
 # 💻:keyboard: Languages and Tools 
 ## Languages<sup></sup>
 ![Java](https://img.shields.io/badge/Java-007396.svg?&style=for-the-badge&logo=Java&logoColor=white) ![Spring](https://img.shields.io/badge/Spring-6DB33F.svg?&style=for-the-badge&logo=Spring&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB.svg?&style=for-the-badge&logo=Python&logoColor=white) ![Android](https://img.shields.io/badge/Android-3DDC84.svg?&style=for-the-badge&logo=Android&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E.svg?&style=for-the-badge&logo=JavaScript&logoColor=white)
