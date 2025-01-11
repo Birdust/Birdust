@@ -1,11 +1,13 @@
 <!--
 ![header](https://capsule-render.vercel.app/api?type=cylinder&color=000000&height=150&section=header&text=Birdust&fontColor=ffffff&fontSize=70&animation=fadeIn&fontAlignY=55)
  -->
+
 <!--
-![soft](https://capsule-render.vercel.app/api?type=soft&color=auto&text=🚀%202021219008%20김언지의%20README&fontSize=40&animation=twinkling)
+![soft](https://capsule-render.vercel.app/api?type=soft&color=000000&height=150&section=header&text=Birdust%20README&fontColor=ffffff&fontSize=40&animation=twinkling)
 -->
 
-![soft](https://capsule-render.vercel.app/api?type=soft&color=000000&height=150&section=header&text=Birdust%20README&fontColor=ffffff&fontSize=40&animation=twinkling)
+![output](https://github.com/user-attachments/assets/4270206e-dca1-4a09-9e8d-d96049d067ae)
+
 <!--
 # <div align="center">Birdust</div>
 ---
