@@ -6,7 +6,7 @@
 ![soft](https://capsule-render.vercel.app/api?type=soft&color=000000&height=150&section=header&text=Birdust%20README&fontColor=ffffff&fontSize=40&animation=twinkling)
 -->
 
-![output](https://github.com/user-attachments/assets/4270206e-dca1-4a09-9e8d-d96049d067ae)
+![output](https://github.com/user-attachments/assets/06db4f6d-d41c-435c-8487-d58d2c3ec340)
 
 <!--
 # <div align="center">Birdust</div>
