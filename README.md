@@ -15,7 +15,7 @@
 
 ## About me
 -  Full stack development | Machine learning | Deep learning | Computer vision | Drone
-- 이력서 페이지 : **[https://birdust.github.io/resume/](https://birdust.github.io/resume/)**
+- 이력서 페이지 : **[https://birdust.github.io/resume_dev/](https://birdust.github.io/resume_dev/)**
 -  e-mail : **[djswl0922@gmail.com](djswl0922@gmail.com)**
 # 💻 Languages and Tools 
 ## Languages<sup></sup>
