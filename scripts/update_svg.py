@@ -26,9 +26,9 @@ ART_X = 15
 INFO_X = 400
 
 CAT = r"""
-  ____________________________
- < thanks for stopping by! :D >
-  ----------------------------
+  _____________
+ < Hello world >
+  -------------
           \
            \
             /\_/\
@@ -242,7 +242,8 @@ def main():
     today = datetime.now(KST).date()
     lines = info_lines(fetch_stats(), today)
     for theme in THEMES:
-        (ROOT / f"{theme}_mode.svg").write_text(render(theme, lines), encoding="utf-8")
+        # OS와 상관없이 LF로 써야 로컬 실행과 Actions 결과가 같아진다.
+        (ROOT / f"{theme}_mode.svg").write_text(render(theme, lines), encoding="utf-8", newline="\n")
         print(f"wrote {theme}_mode.svg")
 
 

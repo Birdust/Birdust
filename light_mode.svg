@@ -9,9 +9,9 @@ text, tspan { white-space: pre; }
 </style>
 <rect width="1041" height="450" rx="15" fill="#f6f8fa"/>
 <text class="art">
-<tspan x="15" y="110">  ____________________________</tspan>
-<tspan x="15" y="130"> &lt; thanks for stopping by! :D &gt;</tspan>
-<tspan x="15" y="150">  ----------------------------</tspan>
+<tspan x="15" y="110">  _____________</tspan>
+<tspan x="15" y="130"> &lt; Hello world &gt;</tspan>
+<tspan x="15" y="150">  -------------</tspan>
 <tspan x="15" y="170">          \</tspan>
 <tspan x="15" y="190">           \</tspan>
 <tspan x="15" y="210">            /\_/\</tspan>
@@ -41,6 +41,6 @@ text, tspan { white-space: pre; }
 <tspan x="400" y="350"><tspan class="key">Resume:</tspan><tspan class="dots"> ............................... </tspan><tspan class="value">birdust.github.io/resume</tspan></tspan>
 <tspan x="400" y="390"><tspan class="text">- GitHub Stats </tspan><tspan class="text">─────────────────────────────────────────────────</tspan></tspan>
 <tspan x="400" y="410"><tspan class="key">Repos:</tspan><tspan class="dots"> ... </tspan><tspan class="value">13 {Contributed: 0}</tspan><tspan class="text"> | </tspan><tspan class="key">Stars:</tspan><tspan class="dots"> ...................... </tspan><tspan class="value">1</tspan></tspan>
-<tspan x="400" y="430"><tspan class="key">Commits:</tspan><tspan class="dots"> ................. </tspan><tspan class="value">180</tspan><tspan class="text"> | </tspan><tspan class="key">Followers:</tspan><tspan class="dots"> ................. </tspan><tspan class="value">25</tspan></tspan>
+<tspan x="400" y="430"><tspan class="key">Commits:</tspan><tspan class="dots"> ............... </tspan><tspan class="value">1,500</tspan><tspan class="text"> | </tspan><tspan class="key">Followers:</tspan><tspan class="dots"> ................. </tspan><tspan class="value">25</tspan></tspan>
 </text>
 </svg>
