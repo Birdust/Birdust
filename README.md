@@ -6,7 +6,12 @@
 ![soft](https://capsule-render.vercel.app/api?type=soft&color=000000&height=150&section=header&text=Birdust%20README&fontColor=ffffff&fontSize=40&animation=twinkling)
 -->
 
-![output](./terminal.gif)
+<a href="https://github.com/Birdust">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./dark_mode.svg">
+    <img alt="Birdust's GitHub profile card" src="./light_mode.svg">
+  </picture>
+</a>
 
 <!--
 # <div align="center">Birdust</div>

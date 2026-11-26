@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1041" height="450" viewBox="0 0 1041 450" font-size="16px" font-family="Consolas, 'DejaVu Sans Mono', Menlo, 'Courier New', monospace">
+<style>
+text, tspan { white-space: pre; }
+.text { fill: #c9d1d9; }
+.key { fill: #ffa657; }
+.value { fill: #a5d6ff; }
+.dots { fill: #616e7f; }
+.art { fill: #c9d1d9; }
+</style>
+<rect width="1041" height="450" rx="15" fill="#161b22"/>
+<text class="art">
+<tspan x="15" y="110">  ____________________________</tspan>
+<tspan x="15" y="130"> &lt; thanks for stopping by! :D &gt;</tspan>
+<tspan x="15" y="150">  ----------------------------</tspan>
+<tspan x="15" y="170">          \</tspan>
+<tspan x="15" y="190">           \</tspan>
+<tspan x="15" y="210">            /\_/\</tspan>
+<tspan x="15" y="230">           ( o.o )</tspan>
+<tspan x="15" y="250">           =\ ^ /=</tspan>
+<tspan x="15" y="270">          /       \</tspan>
+<tspan x="15" y="290">         /  |   |  \</tspan>
+<tspan x="15" y="310">        (   |   |   )</tspan>
+<tspan x="15" y="330">         \__|___|__/</tspan>
+<tspan x="15" y="350">            _| |_</tspan>
+</text>
+<text class="text">
+<tspan x="400" y="30"><tspan class="text">birdust@github </tspan><tspan class="text">─────────────────────────────────────────────────</tspan></tspan>
+<tspan x="400" y="50"><tspan class="key">OS:</tspan><tspan class="dots"> .......... </tspan><tspan class="value">Ubuntu 24.04, CentOS 7, Windows, Jetson Xavier NX</tspan></tspan>
+<tspan x="400" y="70"><tspan class="key">Uptime:</tspan><tspan class="dots"> ............................. </tspan><tspan class="value">25 years, 2 months, 4 days</tspan></tspan>
+<tspan x="400" y="90"><tspan class="key">Host:</tspan><tspan class="dots"> ........................... </tspan><tspan class="value">SAIG · Traffic Control Backend</tspan></tspan>
+<tspan x="400" y="110"><tspan class="key">Kernel:</tspan><tspan class="dots"> ............................ </tspan><tspan class="value">Information &amp; Communication</tspan></tspan>
+<tspan x="400" y="130"><tspan class="key">IDE:</tspan><tspan class="dots"> .............. </tspan><tspan class="value">IntelliJ IDEA, VSCode, vim, Jupyter Notebook</tspan></tspan>
+<tspan x="400" y="170"><tspan class="key">Languages.Programming:</tspan><tspan class="dots"> ........... </tspan><tspan class="value">Java, Python, JavaScript, SQL</tspan></tspan>
+<tspan x="400" y="190"><tspan class="key">Frameworks.Backend:</tspan><tspan class="dots"> ....... </tspan><tspan class="value">Spring Boot, Spring AI, JPA, MyBatis</tspan></tspan>
+<tspan x="400" y="210"><tspan class="key">Frameworks.Node:</tspan><tspan class="dots"> ........................................ </tspan><tspan class="value">NestJS</tspan></tspan>
+<tspan x="400" y="230"><tspan class="key">Frameworks.Vision:</tspan><tspan class="dots"> .................. </tspan><tspan class="value">OpenCV, YOLO, PyTorch, ROS</tspan></tspan>
+<tspan x="400" y="250"><tspan class="key">Infra.DB:</tspan><tspan class="dots"> ............................. </tspan><tspan class="value">PostgreSQL, Redis, MySQL</tspan></tspan>
+<tspan x="400" y="270"><tspan class="key">Infra.Ops:</tspan><tspan class="dots"> ........... </tspan><tspan class="value">Docker, nginx, GitHub Actions, Prometheus</tspan></tspan>
+<tspan x="400" y="310"><tspan class="text">- Contact </tspan><tspan class="text">──────────────────────────────────────────────────────</tspan></tspan>
+<tspan x="400" y="330"><tspan class="key">Email:</tspan><tspan class="dots"> ..................................... </tspan><tspan class="value">djswl0922@gmail.com</tspan></tspan>
+<tspan x="400" y="350"><tspan class="key">Resume:</tspan><tspan class="dots"> ............................... </tspan><tspan class="value">birdust.github.io/resume</tspan></tspan>
+<tspan x="400" y="390"><tspan class="text">- GitHub Stats </tspan><tspan class="text">─────────────────────────────────────────────────</tspan></tspan>
+<tspan x="400" y="410"><tspan class="key">Repos:</tspan><tspan class="dots"> ... </tspan><tspan class="value">13 {Contributed: 0}</tspan><tspan class="text"> | </tspan><tspan class="key">Stars:</tspan><tspan class="dots"> ...................... </tspan><tspan class="value">1</tspan></tspan>
+<tspan x="400" y="430"><tspan class="key">Commits:</tspan><tspan class="dots"> ............... </tspan><tspan class="value">1,499</tspan><tspan class="text"> | </tspan><tspan class="key">Followers:</tspan><tspan class="dots"> ................. </tspan><tspan class="value">25</tspan></tspan>
+</text>
+</svg>
