@@ -1,28 +1,24 @@
 """neofetch 스타일 프로필 카드(dark_mode.svg / light_mode.svg)를 생성한다.
 
-GitHub Actions에서 매일 실행되어 Uptime과 GitHub Stats를 갱신한다.
+GitHub Actions에서 매일 실행되어 Uptime을 갱신한다.
 표준 라이브러리만 사용한다.
 
-    GITHUB_TOKEN=... python scripts/update_svg.py
+    python scripts/update_svg.py
 """
 
-import json
-import os
-import urllib.request
 from datetime import date, datetime, timedelta, timezone
 from html import escape
 from pathlib import Path
 
-LOGIN = "Birdust"
 BIRTHDAY = date(2001, 9, 22)
 KST = timezone(timedelta(hours=9))
 ROOT = Path(__file__).resolve().parents[1]
 
 # 오른쪽 정보 영역 폭(글자 수). 점선으로 값 끝을 이 폭에 맞춘다.
-COLS = 64
+COLS = 58
 CHAR_W = 9.7  # 16px 고정폭 폰트 한 글자 폭(넉넉하게 잡은 값)
+ART_CHAR_W = 8.8  # 고양이 가운데 정렬용 평균 글자 폭(Consolas 기준)
 LINE_H = 20
-ART_X = 15
 INFO_X = 400
 
 CAT = r"""
@@ -61,88 +57,6 @@ THEMES = {
 }
 
 
-def graphql(query, variables):
-    req = urllib.request.Request(
-        "https://api.github.com/graphql",
-        data=json.dumps({"query": query, "variables": variables}).encode(),
-        headers={
-            "Authorization": f"bearer {os.environ['GITHUB_TOKEN']}",
-            "Content-Type": "application/json",
-        },
-    )
-    with urllib.request.urlopen(req) as res:
-        body = json.load(res)
-    if "errors" in body:
-        raise RuntimeError(body["errors"])
-    return body["data"]
-
-
-def fetch_stats():
-    # 로컬 토큰이든 Actions 토큰이든 같은 숫자가 나오도록 공개 데이터만 센다.
-    repos, stars, cursor = 0, 0, None
-    while True:
-        data = graphql(
-            """
-            query($login: String!, $cursor: String) {
-              user(login: $login) {
-                repositories(ownerAffiliations: OWNER, privacy: PUBLIC, first: 100, after: $cursor) {
-                  totalCount
-                  nodes { stargazerCount }
-                  pageInfo { hasNextPage endCursor }
-                }
-              }
-            }
-            """,
-            {"login": LOGIN, "cursor": cursor},
-        )["user"]["repositories"]
-        repos = data["totalCount"]
-        stars += sum(n["stargazerCount"] for n in data["nodes"])
-        if not data["pageInfo"]["hasNextPage"]:
-            break
-        cursor = data["pageInfo"]["endCursor"]
-
-    user = graphql(
-        """
-        query($login: String!) {
-          user(login: $login) {
-            createdAt
-            followers { totalCount }
-            repositoriesContributedTo(
-              privacy: PUBLIC
-              contributionTypes: [COMMIT, PULL_REQUEST, REPOSITORY]
-            ) { totalCount }
-          }
-        }
-        """,
-        {"login": LOGIN},
-    )["user"]
-
-    # contributionsCollection은 1년 단위로만 조회돼서 가입 연도부터 연도별로 합산한다.
-    commits = 0
-    now = datetime.now(timezone.utc)
-    for year in range(int(user["createdAt"][:4]), now.year + 1):
-        start = datetime(year, 1, 1, tzinfo=timezone.utc)
-        end = min(datetime(year + 1, 1, 1, tzinfo=timezone.utc), now)
-        commits += graphql(
-            """
-            query($login: String!, $from: DateTime!, $to: DateTime!) {
-              user(login: $login) {
-                contributionsCollection(from: $from, to: $to) { totalCommitContributions }
-              }
-            }
-            """,
-            {"login": LOGIN, "from": start.isoformat(), "to": end.isoformat()},
-        )["user"]["contributionsCollection"]["totalCommitContributions"]
-
-    return {
-        "repos": repos,
-        "contributed": user["repositoriesContributedTo"]["totalCount"],
-        "stars": stars,
-        "commits": commits,
-        "followers": user["followers"]["totalCount"],
-    }
-
-
 def uptime(today):
     years = today.year - BIRTHDAY.year
     months = today.month - BIRTHDAY.month
@@ -162,24 +76,18 @@ def uptime(today):
 
 
 # 한 줄은 (텍스트, 색 이름) 조각들의 리스트다.
-def field(key, value, width=COLS):
-    dots = width - len(key) - len(value) - 3  # ":" + 점선 양옆 공백
+def field(key, value):
+    dots = COLS - len(key) - len(value) - 3  # ":" + 점선 양옆 공백
     if dots < 1:
-        raise ValueError(f"'{key}: {value}' does not fit in {width} cols")
+        raise ValueError(f"'{key}: {value}' does not fit in {COLS} cols")
     return [(f"{key}:", "key"), (f" {'.' * dots} ", "dots"), (value, "value")]
-
-
-def pair(left, right):
-    half = (COLS - 3) // 2
-    return field(*left, width=half) + [(" | ", "text")] + field(*right, width=COLS - 3 - half)
 
 
 def header(title):
     return [(f"{title} ", "text"), ("─" * (COLS - len(title) - 1), "text")]
 
 
-def info_lines(stats, today):
-    s = stats
+def info_lines(today):
     return [
         header("birdust@github"),
         field("OS", "Ubuntu 24.04, CentOS 7, Windows, Jetson Xavier NX"),
@@ -188,20 +96,15 @@ def info_lines(stats, today):
         field("Kernel", "Information & Communication"),
         field("IDE", "IntelliJ IDEA, VSCode, vim, Jupyter Notebook"),
         [],
-        field("Languages.Programming", "Java, Python, JavaScript, SQL"),
-        field("Frameworks.Backend", "Spring Boot, Spring AI, JPA, MyBatis"),
-        field("Frameworks.Node", "NestJS"),
-        field("Frameworks.Vision", "OpenCV, YOLO, PyTorch, ROS"),
-        field("Infra.DB", "PostgreSQL, Redis, MySQL"),
-        field("Infra.Ops", "Docker, nginx, GitHub Actions, Prometheus"),
+        field("Languages", "Java, Python, JavaScript, SQL"),
+        field("Frameworks", "Spring Boot, NestJS, Node.js, React, FastAPI"),
+        field("Vision", "OpenCV, YOLO, PyTorch, ROS"),
+        field("Database", "PostgreSQL, Redis, MySQL"),
+        field("DevOps", "Docker, nginx, GitHub Actions"),
         [],
         header("- Contact"),
         field("Email", "djswl0922@gmail.com"),
         field("Resume", "birdust.github.io/resume"),
-        [],
-        header("- GitHub Stats"),
-        pair(("Repos", f"{s['repos']} {{Contributed: {s['contributed']}}}"), ("Stars", f"{s['stars']:,}")),
-        pair(("Commits", f"{s['commits']:,}"), ("Followers", f"{s['followers']:,}")),
     ]
 
 
@@ -210,7 +113,9 @@ def render(theme, lines):
     rows = max(len(lines), len(CAT))
     height = rows * LINE_H + 30
     width = round(INFO_X + COLS * CHAR_W + 20)
-    art_top = 30 + (rows - len(CAT)) // 2 * LINE_H  # 고양이는 세로 가운데
+    # 고양이는 왼쪽 영역의 가로·세로 가운데
+    art_x = round((INFO_X - max(map(len, CAT)) * ART_CHAR_W) / 2)
+    art_top = 30 + (rows - len(CAT)) // 2 * LINE_H
 
     out = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" '
@@ -223,7 +128,7 @@ def render(theme, lines):
         f'<rect width="{width}" height="{height}" rx="15" fill="{c["bg"]}"/>',
         '<text class="art">',
         *(
-            f'<tspan x="{ART_X}" y="{art_top + i * LINE_H}">{escape(line)}</tspan>'
+            f'<tspan x="{art_x}" y="{art_top + i * LINE_H}">{escape(line)}</tspan>'
             for i, line in enumerate(CAT)
         ),
         "</text>",
@@ -239,8 +144,7 @@ def render(theme, lines):
 
 
 def main():
-    today = datetime.now(KST).date()
-    lines = info_lines(fetch_stats(), today)
+    lines = info_lines(datetime.now(KST).date())
     for theme in THEMES:
         # OS와 상관없이 LF로 써야 로컬 실행과 Actions 결과가 같아진다.
         (ROOT / f"{theme}_mode.svg").write_text(render(theme, lines), encoding="utf-8", newline="\n")
