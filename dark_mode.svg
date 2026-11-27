@@ -26,7 +26,7 @@ text, tspan { white-space: pre; }
 <text class="text">
 <tspan x="400" y="30"><tspan class="text">birdust@github </tspan><tspan class="text">───────────────────────────────────────────</tspan></tspan>
 <tspan x="400" y="50"><tspan class="key">OS:</tspan><tspan class="dots"> .... </tspan><tspan class="value">Ubuntu 24.04, CentOS 7, Windows, Jetson Xavier NX</tspan></tspan>
-<tspan x="400" y="70"><tspan class="key">Uptime:</tspan><tspan class="dots"> ....................... </tspan><tspan class="value">25 years, 2 months, 5 days</tspan></tspan>
+<tspan x="400" y="70"><tspan class="key">Uptime:</tspan><tspan class="dots"> ....................... </tspan><tspan class="value">25 years, 2 months, 6 days</tspan></tspan>
 <tspan x="400" y="90"><tspan class="key">Host:</tspan><tspan class="dots"> ..................... </tspan><tspan class="value">SAIG · Traffic Control Backend</tspan></tspan>
 <tspan x="400" y="110"><tspan class="key">Kernel:</tspan><tspan class="dots"> ...................... </tspan><tspan class="value">Information &amp; Communication</tspan></tspan>
 <tspan x="400" y="130"><tspan class="key">IDE:</tspan><tspan class="dots"> ........ </tspan><tspan class="value">IntelliJ IDEA, VSCode, vim, Jupyter Notebook</tspan></tspan>
